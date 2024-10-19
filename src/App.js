@@ -1,13 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import HomePage from './components/HomePage.jsx';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <div className="container">
-      <h1 className="text-center my-4">Welcome to Bootstrap with React</h1>
-    </div>
+        <HomePage></HomePage>
       </header>
     </div>
   );

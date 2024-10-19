@@ -1,0 +1,5 @@
+/* Hide the dropdown arrow */
+.navbar .dropdown-toggle::after {
+    display: none;  /* Remove the default arrow */
+  }
+  
