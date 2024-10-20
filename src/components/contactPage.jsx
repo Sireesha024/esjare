@@ -13,7 +13,7 @@ function ContactPage() {
       <Row className="mt-5">
         <Col md={6}>
           <h2 className="mb-4">
-            Ready to Experience the Emerovate Difference?
+            Ready to Experience the EsJare Difference?
           </h2>
           <p>
             Contact Emerovate today to explore how our IT managed services can

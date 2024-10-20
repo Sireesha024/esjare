@@ -5,7 +5,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ContactPage from './components/ContactPage.jsx';
-import ItSupport from './components/ItSupport.jsx';
+import NLP from './components/services/NLP.jsx';
+import DSModelBuilder from './components/services/DSModelBuilder.jsx';
+import AmbulanceServices from './components/services/AmbulanceServices.jsx';
+import AnalyticsModels from './components/services/AnalyticsModels.jsx';
+import PatientMonitoring from './components/services/PatientMonitoring.jsx';
 
 function App() {
   return (
@@ -20,9 +24,11 @@ function App() {
             <Route path="/about/choose-us" element={<About section="chooseUs" />} />
             <Route path="/about/story" element={<About section="history" />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/services/it-support" element={<ItSupport />} />
-            <Route path="/services/cloud-services" element={<ItSupport />} />
-
+            <Route path="/services/ds-model-builder" element={<DSModelBuilder />} />
+            <Route path="/services/analytics-model" element={<AnalyticsModels />} />
+            <Route path="/services/patient-monitoring" element={<PatientMonitoring />} />
+            <Route path="/services/nlp" element={<NLP />} />
+            <Route path="/services/ambulance-services" element={<AmbulanceServices />} />
           </Routes>
         </header>
       </div>

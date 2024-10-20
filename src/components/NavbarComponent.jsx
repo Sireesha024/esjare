@@ -24,7 +24,7 @@ const NavigationBar = () => {
               <i className="fas fa-phone-alt"></i> 630-506-8634
             </span>
             <span className="email">
-              <i className="fas fa-envelope"></i> support@emerovate.com
+              <i className="fas fa-envelope"></i> support@esjare.com
             </span>
           </div>
           <div className="social-icons">
@@ -83,17 +83,20 @@ const NavigationBar = () => {
                 onMouseLeave={handleMouseLeaveServices}
                 className="nav-link"
               >
-                <LinkContainer to="/services/it-support">
-                  <NavDropdown.Item>IT Support</NavDropdown.Item>
+                <LinkContainer to="/services/ds-model-builder">
+                  <NavDropdown.Item>Custom Data Science Model Builder</NavDropdown.Item>
                 </LinkContainer>
-                <LinkContainer to="/services/cloud-services">
-                  <NavDropdown.Item>Cloud Services</NavDropdown.Item>
+                <LinkContainer to="/services/analytics-model">
+                  <NavDropdown.Item>Predictive Analytics Models</NavDropdown.Item>
                 </LinkContainer>
-                <LinkContainer to="/services/data-recovery">
-                  <NavDropdown.Item>Data Recovery</NavDropdown.Item>
+                <LinkContainer to="/services/patient-monitoring">
+                  <NavDropdown.Item>AI-Driven Patient Monitoring</NavDropdown.Item>
                 </LinkContainer>
-                <LinkContainer to="/services/cyber-security">
-                  <NavDropdown.Item>Cyber Security</NavDropdown.Item>
+                <LinkContainer to="/services/nlp">
+                  <NavDropdown.Item>Natural Language Processing (NLP)</NavDropdown.Item>
+                </LinkContainer>
+                <LinkContainer to="/services/ambulance-services">
+                  <NavDropdown.Item>Integrated AI for Ambulance Services</NavDropdown.Item>
                 </LinkContainer>
               </NavDropdown>
 
