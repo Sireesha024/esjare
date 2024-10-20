@@ -1,14 +1,15 @@
 .top-navbar {
-    background-color: #32425F; // Dark background color
+    background-color: #32425F;
     opacity: 0.8;
     padding: 15px;
     width: 100%;
+    margin-top: 0px;
     position: static;
   
     .contact-info {
       display: flex;
       gap: 15px;
-      color: #fff; // Accent color
+      color: #fff;
   
       .phone, .email {
         display: flex;
@@ -16,7 +17,7 @@
         gap: 5px;
   
         i {
-          color: #FF6B52; // Light Gray for icons
+          color: #FF6B52;
         }
       }
     }
@@ -26,19 +27,19 @@
       gap: 15px;
   
       i {
-        color: #FF6B52; // Light Gray for icons
+        color: #FF6B52;
         font-size: 1.2rem;
   
         &:hover {
-          color: #f7e1d7ff; // Champagne Pink on hover
+          color: #f7e1d7ff;
         }
       }
     }
   }
   
   .main-navbar {
+    font-size: medium;
     background-color: #fff;
-    padding: 10px 20px;
     width: 100%;
     opacity: 0.8;
     position: static;
@@ -48,12 +49,16 @@
       width: auto;
     }
   
-    .nav-link {
-      color: #000; // Dark text color
-      margin-right: 15px;
+    .nav-link-no {
+      padding-top: 16px;
+    }
+
+    .nav-link, .nav-link-no {
+      color: #000;
+      margin-bottom: 0px ;
   
       &:hover {
-        color: #535FB7; // Secondary color on hover
+        color: #535FB7;
       }
     }
   

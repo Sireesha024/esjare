@@ -1,19 +1,16 @@
 import React from 'react';
 import NavbarComponent from './NavbarComponent';
 import HeroSection from './HeroSection';
-import Services from './Services';
-import About from './About';
 import Footer from './Footer';
+import './../css/homePage.css'
 
 const HomePage = () => {
   return (
-    <>
+    <div className='homePage'>
       <NavbarComponent />
       <HeroSection />
-      <About />
-      <Services />
       <Footer />
-    </>
+      </div>
   );
 }
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
-import './../css/styles.css'; // SCSS styles
+import './../css/navbar.css';
 import './../assets/logo.jpeg';
 
 const NavigationBar = () => {
@@ -39,7 +39,7 @@ const NavigationBar = () => {
         <Container>
           <Navbar.Brand href="#home">
             <img
-              src="./../assets/logo.jpeg" // Replace with your logo path
+              src="./../assets/logo.jpeg"
               alt="Emerovate Logo"
               className="navbar-logo"
             />
@@ -47,7 +47,7 @@ const NavigationBar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="#home" className="nav-link">Home</Nav.Link>
+              <Nav.Link href="#home" className="nav-link-no">Home</Nav.Link>
 
               {/* About Dropdown */}
               <NavDropdown
@@ -78,7 +78,7 @@ const NavigationBar = () => {
                 <NavDropdown.Item href="#cyber-security">Cyber Security</NavDropdown.Item>
               </NavDropdown>
 
-              <Nav.Link href="#contact" className="nav-link">Contact Us</Nav.Link>
+              <Nav.Link href="#contact" className="nav-link-no">Contact Us</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
