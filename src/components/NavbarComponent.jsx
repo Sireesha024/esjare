@@ -37,7 +37,7 @@ const NavigationBar = () => {
       {/* Main Navbar */}
       <Navbar expand="lg" className="main-navbar" sticky="top">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="home">
             <img
               src="./../assets/logo.jpeg"
               alt="Emerovate Logo"
@@ -47,7 +47,7 @@ const NavigationBar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="#home" className="nav-link-no">Home</Nav.Link>
+              <Nav.Link href="home" className="nav-link-no">Home</Nav.Link>
 
               {/* About Dropdown */}
               <NavDropdown
@@ -58,9 +58,9 @@ const NavigationBar = () => {
                 onMouseLeave={handleMouseLeaveAbout}
                 className="nav-link"
               >
-                <NavDropdown.Item href="#mission">Our Mission</NavDropdown.Item>
-                <NavDropdown.Item href="#choose-us">Why Choose Us</NavDropdown.Item>
-                <NavDropdown.Item href="#story">Our Story</NavDropdown.Item>
+                <NavDropdown.Item href="/about/mission">Our Mission</NavDropdown.Item>
+                <NavDropdown.Item href="/about/choose-us">Why Choose Us</NavDropdown.Item>
+                <NavDropdown.Item href="/about/story">Our Story</NavDropdown.Item>
               </NavDropdown>
 
               {/* Services Dropdown */}
@@ -72,13 +72,13 @@ const NavigationBar = () => {
                 onMouseLeave={handleMouseLeaveServices}
                 className="nav-link"
               >
-                <NavDropdown.Item href="#it-support">IT Support</NavDropdown.Item>
-                <NavDropdown.Item href="#cloud-services">Cloud Services</NavDropdown.Item>
-                <NavDropdown.Item href="#data-recovery">Data Recovery</NavDropdown.Item>
-                <NavDropdown.Item href="#cyber-security">Cyber Security</NavDropdown.Item>
+                <NavDropdown.Item href="it-support">IT Support</NavDropdown.Item>
+                <NavDropdown.Item href="cloud-services">Cloud Services</NavDropdown.Item>
+                <NavDropdown.Item href="data-recovery">Data Recovery</NavDropdown.Item>
+                <NavDropdown.Item href="cyber-security">Cyber Security</NavDropdown.Item>
               </NavDropdown>
 
-              <Nav.Link href="#contact" className="nav-link-no">Contact Us</Nav.Link>
+              <Nav.Link href="contact" className="nav-link-no">Contact Us</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

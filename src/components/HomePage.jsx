@@ -1,17 +1,18 @@
-import React from 'react';
-import NavbarComponent from './NavbarComponent';
-import HeroSection from './HeroSection';
-import Footer from './Footer';
-import './../css/homePage.css'
+import React from "react";
+import NavigationBar from "./NavbarComponent";
+import HeroSection from "./HeroSection";
+import Footer from "./Footer";
 
 const HomePage = () => {
   return (
-    <div className='homePage'>
-      <NavbarComponent />
-      <HeroSection />
-      <Footer />
-      </div>
+      <>
+        <NavigationBar />
+        <HeroSection />
+
+        <h1>in Home Page</h1>
+        <Footer />
+      </>
   );
-}
+};
 
 export default HomePage;
