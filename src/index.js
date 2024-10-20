@@ -1,8 +1,14 @@
-// index.js
-
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// Get the root element from your HTML
+const rootElement = document.getElementById('root');
+
+// Use createRoot and render the App
+const root = ReactDOM.createRoot(rootElement);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);

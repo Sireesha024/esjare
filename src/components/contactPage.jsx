@@ -1,8 +1,12 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
+import NavigationBar from "./NavbarComponent.jsx";
 
 function ContactPage() {
   return (
+    <>
+    <NavigationBar/>
+    
     <Container className="my-5">
       <h1 className="mb-4">Contact Us</h1>
       <p>Home | Contact Us</p>
@@ -28,13 +32,14 @@ function ContactPage() {
         </Col>
         <Col md={6}>
           <Image
-            src="https://via.placeholder.com/500x300" // Replace with actual image URL
+            src="https://via.placeholder.com/500x300"
             alt="Contact Us"
             fluid
           />
         </Col>
       </Row>
     </Container>
+    </>
   );
 }
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 import './../css/navbar.css';
 import './../assets/logo.jpeg';
 
@@ -37,17 +38,21 @@ const NavigationBar = () => {
       {/* Main Navbar */}
       <Navbar expand="lg" className="main-navbar" sticky="top">
         <Container>
-          <Navbar.Brand href="home">
-            <img
-              src="./../assets/logo.jpeg"
-              alt="Emerovate Logo"
-              className="navbar-logo"
-            />
-          </Navbar.Brand>
+          <LinkContainer to="/">
+            <Navbar.Brand>
+              <img
+                src="./../assets/logo.jpeg"
+                alt="Emerovate Logo"
+                className="navbar-logo"
+              />
+            </Navbar.Brand>
+          </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="home" className="nav-link-no">Home</Nav.Link>
+              <LinkContainer to="/">
+                <Nav.Link className="nav-link-no">Home</Nav.Link>
+              </LinkContainer>
 
               {/* About Dropdown */}
               <NavDropdown
@@ -58,9 +63,15 @@ const NavigationBar = () => {
                 onMouseLeave={handleMouseLeaveAbout}
                 className="nav-link"
               >
-                <NavDropdown.Item href="/about/mission">Our Mission</NavDropdown.Item>
-                <NavDropdown.Item href="/about/choose-us">Why Choose Us</NavDropdown.Item>
-                <NavDropdown.Item href="/about/story">Our Story</NavDropdown.Item>
+                <LinkContainer to="/about/mission">
+                  <NavDropdown.Item>Our Mission</NavDropdown.Item>
+                </LinkContainer>
+                <LinkContainer to="/about/choose-us">
+                  <NavDropdown.Item>Why Choose Us</NavDropdown.Item>
+                </LinkContainer>
+                <LinkContainer to="/about/story">
+                  <NavDropdown.Item>Our Story</NavDropdown.Item>
+                </LinkContainer>
               </NavDropdown>
 
               {/* Services Dropdown */}
@@ -72,13 +83,23 @@ const NavigationBar = () => {
                 onMouseLeave={handleMouseLeaveServices}
                 className="nav-link"
               >
-                <NavDropdown.Item href="it-support">IT Support</NavDropdown.Item>
-                <NavDropdown.Item href="cloud-services">Cloud Services</NavDropdown.Item>
-                <NavDropdown.Item href="data-recovery">Data Recovery</NavDropdown.Item>
-                <NavDropdown.Item href="cyber-security">Cyber Security</NavDropdown.Item>
+                <LinkContainer to="/services/it-support">
+                  <NavDropdown.Item>IT Support</NavDropdown.Item>
+                </LinkContainer>
+                <LinkContainer to="/services/cloud-services">
+                  <NavDropdown.Item>Cloud Services</NavDropdown.Item>
+                </LinkContainer>
+                <LinkContainer to="/services/data-recovery">
+                  <NavDropdown.Item>Data Recovery</NavDropdown.Item>
+                </LinkContainer>
+                <LinkContainer to="/services/cyber-security">
+                  <NavDropdown.Item>Cyber Security</NavDropdown.Item>
+                </LinkContainer>
               </NavDropdown>
 
-              <Nav.Link href="contact" className="nav-link-no">Contact Us</Nav.Link>
+              <LinkContainer to="/contact">
+                <Nav.Link className="nav-link-no">Contact Us</Nav.Link>
+              </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Container>

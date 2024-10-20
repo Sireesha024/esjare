@@ -4,6 +4,8 @@ import About from './components/About.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ContactPage from './components/ContactPage.jsx';
+import ItSupport from './components/ItSupport.jsx';
 
 function App() {
   return (
@@ -17,6 +19,10 @@ function App() {
             <Route path="/about/mission" element={<About section="mission" />} />
             <Route path="/about/choose-us" element={<About section="chooseUs" />} />
             <Route path="/about/story" element={<About section="history" />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/services/it-support" element={<ItSupport />} />
+            <Route path="/services/cloud-services" element={<ItSupport />} />
+
           </Routes>
         </header>
       </div>
