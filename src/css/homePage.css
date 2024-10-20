@@ -1,4 +1,10 @@
 .homePage {
     background: url('./../assets/backgroundImage.jpeg') no-repeat center center;
+    background-size: cover;
     width: 100%;
+    top: 0;
+    left: 0;
+    height: auto;
+    z-index: 0;
+    position: relative;
 }

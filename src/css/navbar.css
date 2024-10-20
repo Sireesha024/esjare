@@ -12,6 +12,7 @@
   color: #fff;
 }
 .top-navbar .contact-info .phone, .top-navbar .contact-info .email {
+  font-size: medium;
   display: flex;
   align-items: center;
   gap: 5px;

@@ -1,0 +1,12 @@
+.home {
+  background-color: #0077D7;
+  margin: 25% 10% 20% 10%;
+  border-radius: 10px;
+  width: 80%;
+}
+.home .description {
+  color: #fff;
+  align-items: center;
+  font-size: 25px;
+  padding: 20px;
+}/*# sourceMappingURL=heroSection.css.map */
