@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import './navbar.css'; // Ensure you import your CSS file
+import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
+import './../css/styles.css'; // SCSS styles
+import './../assets/logo.jpeg';
 
 const NavigationBar = () => {
   const [showAboutDropdown, setShowAboutDropdown] = useState(false);
@@ -13,44 +14,76 @@ const NavigationBar = () => {
   const handleMouseLeaveServices = () => setShowServicesDropdown(false);
 
   return (
-    <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="#home">Emerovate</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
+    <>
+      {/* Top Navbar */}
+      <Navbar className="top-navbar" expand="lg">
+        <Container className="justify-content-between">
+          <div className="contact-info">
+            <span className="phone">
+              <i className="fas fa-phone-alt"></i> 630-506-8634
+            </span>
+            <span className="email">
+              <i className="fas fa-envelope"></i> support@emerovate.com
+            </span>
+          </div>
+          <div className="social-icons">
+            <i className="fab fa-facebook-f"></i>
+            <i className="fab fa-instagram"></i>
+            <i className="fab fa-linkedin-in"></i>
+          </div>
+        </Container>
+      </Navbar>
 
-          {/* About Dropdown */}
-          <NavDropdown
-            title="About"
-            id="about-dropdown"
-            show={showAboutDropdown}
-            onMouseEnter={handleMouseEnterAbout}
-            onMouseLeave={handleMouseLeaveAbout}
-          >
-            <NavDropdown.Item href="#about">Our Mission</NavDropdown.Item>
-            <NavDropdown.Item href="#team">Why choose Us</NavDropdown.Item>
-            <NavDropdown.Item href="#story">Our Story</NavDropdown.Item>
-          </NavDropdown>
+      {/* Main Navbar */}
+      <Navbar expand="lg" className="main-navbar" sticky="top">
+        <Container>
+          <Navbar.Brand href="#home">
+            <img
+              src="./../assets/logo.jpeg" // Replace with your logo path
+              alt="Emerovate Logo"
+              className="navbar-logo"
+            />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ms-auto">
+              <Nav.Link href="#home" className="nav-link">Home</Nav.Link>
 
-          {/* Services Dropdown */}
-          <NavDropdown
-            title="Services"
-            id="services-dropdown"
-            show={showServicesDropdown}
-            onMouseEnter={handleMouseEnterServices}
-            onMouseLeave={handleMouseLeaveServices}
-          >
-            <NavDropdown.Item href="#it-support">IT Support</NavDropdown.Item>
-            <NavDropdown.Item href="#cloud-services">Cloud Services</NavDropdown.Item>
-            <NavDropdown.Item href="#data-recovery">Data Recovery</NavDropdown.Item>
-            <NavDropdown.Item href="#cyber-security">Cyber Security</NavDropdown.Item>
-          </NavDropdown>
+              {/* About Dropdown */}
+              <NavDropdown
+                title="About"
+                id="about-dropdown"
+                show={showAboutDropdown}
+                onMouseEnter={handleMouseEnterAbout}
+                onMouseLeave={handleMouseLeaveAbout}
+                className="nav-link"
+              >
+                <NavDropdown.Item href="#mission">Our Mission</NavDropdown.Item>
+                <NavDropdown.Item href="#choose-us">Why Choose Us</NavDropdown.Item>
+                <NavDropdown.Item href="#story">Our Story</NavDropdown.Item>
+              </NavDropdown>
 
-          <Nav.Link href="#contact">Contact</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+              {/* Services Dropdown */}
+              <NavDropdown
+                title="Services"
+                id="services-dropdown"
+                show={showServicesDropdown}
+                onMouseEnter={handleMouseEnterServices}
+                onMouseLeave={handleMouseLeaveServices}
+                className="nav-link"
+              >
+                <NavDropdown.Item href="#it-support">IT Support</NavDropdown.Item>
+                <NavDropdown.Item href="#cloud-services">Cloud Services</NavDropdown.Item>
+                <NavDropdown.Item href="#data-recovery">Data Recovery</NavDropdown.Item>
+                <NavDropdown.Item href="#cyber-security">Cyber Security</NavDropdown.Item>
+              </NavDropdown>
+
+              <Nav.Link href="#contact" className="nav-link">Contact Us</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </>
   );
 };
 
