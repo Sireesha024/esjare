@@ -32,23 +32,20 @@
   justify-content: space-between; /* Space out items evenly */
   gap: 20px; /* Space between each block */
 }
-.home .services .service-box {
-  flex: 1; /* Allow blocks to grow equally */
-  padding: 15px; /* Padding inside each block */
-  margin: 0; /* Remove margin */
-  transition: transform 0.2s; /* Add transition for hover effect */
+.home .services .coredata-box {
+  flex: 1;
+  padding: 15px;
+  margin: 0;
+  transition: transform 0.2s;
 }
-.home .services .service-box h2 {
+.home .services .coredata-box h2 {
   margin-top: 0; /* Remove top margin from headings */
   font-size: 1.5rem; /* Adjust heading size */
   text-align: left;
 }
-.home .services .service-box p {
+.home .services .coredata-box p {
   font-size: 1rem; /* Adjust paragraph size */
   text-align: left;
-}
-.home .services .service-box:hover {
-  transform: scale(1.02); /* Slightly enlarge block on hover */
 }
 .home .services-container {
   display: flex;

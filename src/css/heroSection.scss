@@ -20,28 +20,26 @@
         gap: 20px; /* Space between each block */
     }
     
-    .service-box {
-        flex: 1; /* Allow blocks to grow equally */
-        padding: 15px; /* Padding inside each block */
-        margin: 0; /* Remove margin */
-        transition: transform 0.2s; /* Add transition for hover effect */
+    .coredata-box {
+        flex: 1; 
+        padding: 15px; 
+        margin: 0; 
+        transition: transform 0.2s; 
     }
     
-    .service-box h2 {
+    .coredata-box h2 {
         margin-top: 0; /* Remove top margin from headings */
         font-size: 1.5rem; /* Adjust heading size */
         text-align: left;
     }
     
-    .service-box p {
+    .coredata-box p {
         font-size: 1rem; /* Adjust paragraph size */
         text-align: left;
     }
     
     /* Optional: Hover effect for interaction */
-    .service-box:hover {
-        transform: scale(1.02); /* Slightly enlarge block on hover */
-    }
+
     
 }
 /* Container to align items in a row */

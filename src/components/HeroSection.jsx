@@ -25,7 +25,7 @@ const HeroSection = () => {
 
         <div className="services-list">
         {Object.entries(coreData).map(([title, description]) => (
-          <div className="service-box" key={title}>
+          <div className="coredata-box" key={title}>
             <h2>{title}</h2>
             <p>{description}</p>
           </div>
