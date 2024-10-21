@@ -1,75 +1,114 @@
-.footer {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-  }
-  
-  .about-heading {
-    color: #1A2947; /* Set the heading color to blue */
-  }
-  
-  .about-content {
-    font-size: 0.9rem; /* Adjust font size smaller */
-  }
-  
-  .text-blue {
-    background-color: #1A2947; /* Apply blue color to copyright */
-    color: #fff;
+/* Footer Area */
+.footer-area {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+.row-blocks {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.aboutus,
+.quick-links,
+.important {
+  width: 25%;
+  text-align: left;
+}
+
+.col-heading {
+  font-size: 18px;
+  color: #1d2e6f; /* Dark blue for headings */
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+.aboutus-content {
+  font-size: 14px;
+  line-height: 2.0;
+  color: #333;
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+/* Links with Arrow in Front */
+ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #505153; /* Dark blue text color for links */
+  position: relative;
+  display: flex;
+  padding-left: 15px; /* Space for arrow in front */
+  font-weight: 600;
+  text-align: left;
+  line-height: 2.0;
+}
+
+ul li a:hover {
+  color: #1d2e6f; /* Keep the color on hover */
+}
+
+ul li a::before {
+  content: "▶"; /* Arrow symbol */
+  font-size: 12px;
+  color: #1d2e6f; /* Arrow color */
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto; /* Center the arrow vertically */
+  transition: transform 0.3s ease-in-out;
+}
+
+ul li a:hover::before {
+  transform: translateX(5px); /* Slide the arrow to the right on hover */
+}
+
+.social-media {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-media i {
+  color: #333; /* Social media icon color */
+  font-size: 16px;
+  padding : 8px;
+}
+
+/* Copyright Area */
+.copyright {
+  background-color: #0c154d; /* Dark blue background */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.copyright p {
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .row-blocks {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .footer {
-    padding: 20px;
-    background-color: white;
-    color: #fff;
-  
-    .footer-heading {
-      color: blue;
-      font-weight: bold;
-    }
-  
-    .footer-text {
-      font-size: 0.9rem;
-      color: #fff;
-    }
-  
-    .footer-list {
-      list-style-type: none;
-      padding: 0;
-  
-      li {
-        margin-bottom: 10px;
-  
-        a {
-          color: #333;
-          text-decoration: none;
-  
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-    }
-  
-    .footer-icon {
-      margin-right: 15px;
-      color: #333;
-  
-      &:hover {
-        color: #007bff;
-      }
-    }
-  
-    .my-3 {
-      margin-top: 20px;
-    }
+  .aboutus,
+  .quick-links,
+  .important {
+    width: 100%;
+    margin-bottom: 20px;
   }
-  
-  .footer-copyright {
-    background-color: #1A2947;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
+}
