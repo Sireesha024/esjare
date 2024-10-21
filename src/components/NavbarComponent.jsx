@@ -3,6 +3,7 @@ import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import './../css/navbar.css';
 import logo from './../assets/logo.jpeg';
+import { servicesData } from '../data/HeroSectionServiceData';
 
 const NavigationBar = () => {
   const [showAboutDropdown, setShowAboutDropdown] = useState(false);
@@ -16,7 +17,6 @@ const NavigationBar = () => {
 
   return (
     <>
-      {/* Top Navbar */}
       <Navbar className="top-navbar" expand="lg">
         <Container className="justify-content-between">
           <div className="contact-info">
@@ -35,7 +35,6 @@ const NavigationBar = () => {
         </Container>
       </Navbar>
 
-      {/* Main Navbar */}
       <Navbar expand="lg" className="main-navbar" sticky="top">
         <Container>
           <LinkContainer to="/">
@@ -74,7 +73,6 @@ const NavigationBar = () => {
                 </LinkContainer>
               </NavDropdown>
 
-              {/* Services Dropdown */}
               <NavDropdown
                 title="Services"
                 id="services-dropdown"
@@ -83,23 +81,12 @@ const NavigationBar = () => {
                 onMouseLeave={handleMouseLeaveServices}
                 className="nav-link"
               >
-                <LinkContainer to="/services/ds-model-builder">
-                  <NavDropdown.Item>Custom Data Science Model Builder</NavDropdown.Item>
-                </LinkContainer>
-                <LinkContainer to="/services/analytics-model">
-                  <NavDropdown.Item>Predictive Analytics Models</NavDropdown.Item>
-                </LinkContainer>
-                <LinkContainer to="/services/patient-monitoring">
-                  <NavDropdown.Item>AI-Driven Patient Monitoring</NavDropdown.Item>
-                </LinkContainer>
-                <LinkContainer to="/services/nlp">
-                  <NavDropdown.Item>Natural Language Processing (NLP)</NavDropdown.Item>
-                </LinkContainer>
-                <LinkContainer to="/services/ambulance-services">
-                  <NavDropdown.Item>Integrated AI for Ambulance Services</NavDropdown.Item>
-                </LinkContainer>
+                {servicesData.map(({ id ,title, redirectLink}) => (
+                  <LinkContainer to={redirectLink} key={id}>
+                    <NavDropdown.Item>{title}</NavDropdown.Item>
+                  </LinkContainer>
+                ))}
               </NavDropdown>
-
               <LinkContainer to="/contact">
                 <Nav.Link className="nav-link-no">Contact Us</Nav.Link>
               </LinkContainer>

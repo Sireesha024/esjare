@@ -34,15 +34,15 @@ const HeroSection = () => {
       </section>
 
       <section className="services-container">
-      {servicesData.map(({ id, imageUrl, text ,title}) => (
+      {servicesData.map(({ id, imageUrl, text ,title, redirectLink}) => (
         <div className={`service-box ${id}`} key={id}>
           <div className="box-image">
-            <img src={imageUrl} alt={text} /> {/* Render the image */}
+            <img src={imageUrl} alt={text} />
           </div>
           <div className="box-text">
           <h3>{title}</h3>
           <p>{text}</p>
-           <a href="#">Read More</a>
+           <a href={redirectLink}>Read More</a>
           </div>
         </div>
       ))}
