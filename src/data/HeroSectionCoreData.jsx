@@ -1,0 +1,5 @@
+export const coreData = {
+    "Proactive Support": "Our team adopts a proactive approach to IT support, monitoring your systems 24/7, and resolving potential issues before they impact your operations. We prioritize preventative maintenance and continuous monitoring to ensure maximum uptime and minimize disruptions.",
+    "Customized Solutions": "We understand that every business has unique IT requirements. That's why we offer tailored solutions that align with your specific needs and goals. From network security and cloud services to data backup and recovery, our experts provide reliable solutions that address your IT challenges.",
+    "Expertise and Experience": "Our team of skilled engineers brings years of experience and industry expertise to the table. They stay up-to-date with the latest technological advancements to deliver cutting-edge solutions. You can trust our experts to handle all your IT needs with precision and professionalism."
+};

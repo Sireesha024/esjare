@@ -1,3 +1,15 @@
+.home {
+  /* Container to align items in a row */
+  /* Container for all service cards */
+  /* Main container to align items in a row */
+  /* Styling for each service box */
+  /* Image stays fixed at the top */
+  /* Text section forms a smaller box below the image */
+  /* Hover effect on the text section */
+  /* Styling for heading and paragraph */
+  /* Read More link styling */
+  /* Responsive Design */
+}
 .home .description {
   color: #fff;
   align-items: center;
@@ -37,4 +49,69 @@
 }
 .home .services .service-box:hover {
   transform: scale(1.02); /* Slightly enlarge block on hover */
+}
+.home .services-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+.home .service-box {
+  width: 30%; /* 3 boxes per row */
+  min-width: 280px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+.home .box-image img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.home .box-text {
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 0 0 12px 12px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+.home .box-text:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+.home .box-text h3 {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+}
+.home .box-text p {
+  margin: 5px 0 10px;
+  font-size: 1rem;
+  color: #666;
+}
+.home .box-text a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.home .box-text a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 900px) {
+  .home .service-box {
+    width: 45%; /* Adjust width for tablets */
+  }
+}
+@media (max-width: 600px) {
+  .home .service-box {
+    width: 100%; /* Stack boxes on small screens */
+  }
 }/*# sourceMappingURL=heroSection.css.map */

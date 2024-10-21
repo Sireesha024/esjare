@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import './../css/navbar.css';
-import './../assets/logo.jpeg';
+import logo from './../assets/logo.jpeg';
 
 const NavigationBar = () => {
   const [showAboutDropdown, setShowAboutDropdown] = useState(false);
@@ -41,7 +41,7 @@ const NavigationBar = () => {
           <LinkContainer to="/">
             <Navbar.Brand>
               <img
-                src="./../assets/logo.jpeg"
+                src={logo}
                 alt="Emerovate Logo"
                 className="navbar-logo"
               />

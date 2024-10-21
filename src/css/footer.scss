@@ -7,7 +7,7 @@
   }
   
   .about-heading {
-    color: rgb(75, 121, 182); /* Set the heading color to blue */
+    color: #1A2947; /* Set the heading color to blue */
   }
   
   .about-content {
@@ -15,13 +15,14 @@
   }
   
   .text-blue {
-    background-color: rgb(85, 110, 158); /* Apply blue color to copyright */
+    background-color: #1A2947; /* Apply blue color to copyright */
+    color: #fff;
   }
 
   .footer {
     padding: 20px;
     background-color: white;
-    color: #333;
+    color: #fff;
   
     .footer-heading {
       color: blue;
@@ -30,7 +31,7 @@
   
     .footer-text {
       font-size: 0.9rem;
-      color: #555;
+      color: #fff;
     }
   
     .footer-list {
@@ -66,7 +67,7 @@
   }
   
   .footer-copyright {
-    background-color: #002366;
+    background-color: #1A2947;
     color: white;
     text-align: center;
     padding: 10px 0;
