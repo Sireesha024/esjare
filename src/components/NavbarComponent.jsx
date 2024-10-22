@@ -79,7 +79,7 @@ const NavigationBar = () => {
                 show={showServicesDropdown}
                 onMouseEnter={handleMouseEnterServices}
                 onMouseLeave={handleMouseLeaveServices}
-                className="nav-link"
+                 className="nav-link custom-dropdown"
               >
                 {servicesData.map(({ id ,title, redirectLink}) => (
                   <LinkContainer to={redirectLink} key={id}>
