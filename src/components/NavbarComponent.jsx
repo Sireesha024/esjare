@@ -60,28 +60,13 @@ const NavigationBar = () => {
                 show={showAboutDropdown}
                 onMouseEnter={handleMouseEnterAbout}
                 onMouseLeave={handleMouseLeaveAbout}
-                className="nav-link"
+                className="nav-link custom-dropdown"
               >
-                <LinkContainer to={{ pathname: "/about", hash: "#mission" }}>
-                  <NavDropdown.Item>Our Mission</NavDropdown.Item>
-                </LinkContainer>
-
-                <LinkContainer to={{ pathname: "/about", hash: "#chooseUs" }}>
-                  <NavDropdown.Item>Why Choose Us</NavDropdown.Item>
-                </LinkContainer>
-
-                <LinkContainer to={{ pathname: "/about", hash: "#history" }}>
-                  <NavDropdown.Item>Our Story</NavDropdown.Item>
-                </LinkContainer>
-                {/* <LinkContainer to="/about/mission">
-                  <NavDropdown.Item>Our Mission</NavDropdown.Item>
-                </LinkContainer>
-                <LinkContainer to="/about/choose-us">
-                  <NavDropdown.Item>Why Choose Us</NavDropdown.Item>
-                </LinkContainer>
-                <LinkContainer to="/about/story">
-                  <NavDropdown.Item>Our Story</NavDropdown.Item>
-                </LinkContainer> */}
+                <ul className="dropdown">
+                  <a className="about-list" href="about#history">History</a>
+                  <a className="about-list" href="about#chooseUs">Why Choose Us</a>
+                  <a className="about-list" href="about#mission">Mission</a>
+                </ul>
               </NavDropdown>
 
               <NavDropdown

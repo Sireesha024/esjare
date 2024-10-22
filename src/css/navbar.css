@@ -101,4 +101,33 @@
   background-color: transparent; /* Keep background transparent on hover */
   border-left: 2px solid blue; /* Add a blue bottom border on hover */
   color: #000; /* Change text color on hover */
+}
+
+.custom-dropdown .dropdown {
+  padding-left: 0; /* Remove default padding */
+  margin: 0;
+}
+
+.custom-dropdown .about-list {
+  display: block; /* Ensure the whole item is clickable */
+  padding: 10px 15px; /* Add padding for space around each link */
+  text-decoration: none; /* Remove underline from the links */
+  color: #333; /* Set text color */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Opaque divider between items */
+  transition: background-color 0.2s, border-color 0.2s; /* Smooth transitions */
+}
+
+.custom-dropdown .about-list a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Set text color */
+  display: block; /* Ensure the entire item is clickable */
+}
+
+.custom-dropdown .about-list:hover {
+  background-color: transparent; /* Keep background transparent on hover */
+  border-left: 2px solid blue; /* Blue border on hover */
+}
+
+.custom-dropdown .about-list:last-child {
+  border-bottom: none; /* No bottom border for the last item */
 }/*# sourceMappingURL=navbar.css.map */
