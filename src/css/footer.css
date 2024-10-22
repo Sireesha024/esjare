@@ -87,6 +87,7 @@ ul li a:hover::before {
 /* Copyright Area */
 .copyright {
   background-color: #0c154d; /* Dark blue background */
+  width: 100%;
   color: #fff;
   padding: 20px 0;
   text-align: center;

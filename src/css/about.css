@@ -2,7 +2,6 @@
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
   }
   
   .about-nav ul {
@@ -27,11 +26,6 @@
   
   .about-nav button:hover {
     color: #0056b3;
-  }
-  
-  .about-section {
-    margin-top: 50px;
-    padding: 2rem 0;
   }
   
   .about-section img {

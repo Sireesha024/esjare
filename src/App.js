@@ -20,9 +20,9 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/home" element={<HomePage />} />
             <Route path="/about" element={<About />} />
-            <Route path="/about/mission" element={<About section="mission" />} />
+            {/* <Route path="/about/mission" element={<About section="mission" />} />
             <Route path="/about/choose-us" element={<About section="chooseUs" />} />
-            <Route path="/about/story" element={<About section="history" />} />
+            <Route path="/about/story" element={<About section="history" />} /> */}
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/services/ds-model-builder" element={<DSModelBuilder />} />
             <Route path="/services/analytics-model" element={<AnalyticsModels />} />

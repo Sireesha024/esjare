@@ -62,7 +62,18 @@ const NavigationBar = () => {
                 onMouseLeave={handleMouseLeaveAbout}
                 className="nav-link"
               >
-                <LinkContainer to="/about/mission">
+                <LinkContainer to={{ pathname: "/about", hash: "#mission" }}>
+                  <NavDropdown.Item>Our Mission</NavDropdown.Item>
+                </LinkContainer>
+
+                <LinkContainer to={{ pathname: "/about", hash: "#chooseUs" }}>
+                  <NavDropdown.Item>Why Choose Us</NavDropdown.Item>
+                </LinkContainer>
+
+                <LinkContainer to={{ pathname: "/about", hash: "#history" }}>
+                  <NavDropdown.Item>Our Story</NavDropdown.Item>
+                </LinkContainer>
+                {/* <LinkContainer to="/about/mission">
                   <NavDropdown.Item>Our Mission</NavDropdown.Item>
                 </LinkContainer>
                 <LinkContainer to="/about/choose-us">
@@ -70,7 +81,7 @@ const NavigationBar = () => {
                 </LinkContainer>
                 <LinkContainer to="/about/story">
                   <NavDropdown.Item>Our Story</NavDropdown.Item>
-                </LinkContainer>
+                </LinkContainer> */}
               </NavDropdown>
 
               <NavDropdown

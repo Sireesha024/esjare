@@ -1,0 +1,34 @@
+.cloud-service-section {
+  padding: 3rem 0;
+}
+.cloud-service-section .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.cloud-service-section .container.reverse {
+  flex-direction: row-reverse;
+}
+.cloud-service-section .text-content h2.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #002050;
+  margin-bottom: 1.5rem;
+}
+.cloud-service-section .text-content p.section-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.cloud-service-section .image-content .service-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+@media (max-width: 768px) {
+  .cloud-service-section .container {
+    flex-direction: column;
+  }
+  .cloud-service-section .container.reverse {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=contentComp.css.map */

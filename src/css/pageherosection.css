@@ -1,0 +1,34 @@
+.hero-section {
+  text-align: left;
+  width: 100%;
+  padding-left: 8rem;
+}
+.hero-section .container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.hero-section .row {
+  margin: 0;
+}
+.hero-section .hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000000; /* Bootstrap primary color */
+  margin-bottom: 1rem;
+}
+.hero-section .breadcrumb {
+  background-color: transparent; /* Removes background if any */
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.hero-section .breadcrumb .breadcrumb-item {
+  font-size: 1rem;
+}
+.hero-section .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  content: "|";
+  color: #6c6c6c;
+}
+.hero-section .breadcrumb .breadcrumb-item a {
+  text-decoration: none;
+  color: #6c6c6c;
+}/*# sourceMappingURL=PageHeroSection.css.map */

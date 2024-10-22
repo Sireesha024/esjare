@@ -1,0 +1,43 @@
+.hero-section {
+    text-align: left;
+    width: 100%;
+    padding-left: 8rem;
+  
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  
+    .row {
+      margin: 0;
+    }
+  
+    .hero-title {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #000000; /* Bootstrap primary color */
+      margin-bottom: 1rem;
+    }
+  
+    .breadcrumb {
+        background-color: transparent; /* Removes background if any */
+        padding: 0;
+        margin-bottom: 1rem;
+
+      
+        .breadcrumb-item {
+            font-size: 1rem;
+          & + .breadcrumb-item::before {
+            content: '|';
+            color: #6c6c6c;
+          }
+        }
+        
+        .breadcrumb-item a {
+          text-decoration: none;
+          color: #6c6c6c;
+        }
+    }
+      
+  }
+  

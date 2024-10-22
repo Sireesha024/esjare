@@ -1,15 +1,19 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import NavigationBar from "./NavbarComponent.jsx";
+import PageHeroSection from './PageHeroSection.jsx';
+import Footer from "./Footer.jsx";
 
 function ContactPage() {
+  const breadcrumbs = [   
+    { name: 'Home', link: '/' },
+    { name: 'Contact Us', link: 'contactus' },
+];
   return (
     <>
     <NavigationBar/>
-    
+    <PageHeroSection pageTitle="Contact Us" breadcrumbs={breadcrumbs} />
     <Container className="my-5">
-      <h1 className="mb-4">Contact Us</h1>
-      <p>Home | Contact Us</p>
       <Row className="mt-5">
         <Col md={6}>
           <h2 className="mb-4">
@@ -39,6 +43,7 @@ function ContactPage() {
         </Col>
       </Row>
     </Container>
+    <Footer/>
     </>
   );
 }

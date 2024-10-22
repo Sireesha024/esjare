@@ -1,0 +1,46 @@
+.cloud-service-section {
+    padding: 3rem 0;
+  
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  
+      &.reverse {
+        flex-direction: row-reverse;
+      }
+    }
+  
+    .text-content {
+      h2.section-title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #002050;
+        margin-bottom: 1.5rem;
+      }
+  
+      p.section-description {
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+    }
+  
+    .image-content {
+      .service-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+  
+        &.reverse {
+          flex-direction: column; // Stacks items normally in mobile view even if reversed
+        }
+      }
+    }
+  }
+  
