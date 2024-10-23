@@ -63,9 +63,9 @@ const NavigationBar = () => {
                 className="nav-link custom-dropdown"
               >
                 <ul className="dropdown">
-                  <a className="about-list" href="about#history">History</a>
-                  <a className="about-list" href="about#chooseUs">Why Choose Us</a>
-                  <a className="about-list" href="about#mission">Mission</a>
+                  <a className="about-list" href="/about#history">History</a>
+                  <a className="about-list" href="/about#chooseUs">Why Choose Us</a>
+                  <a className="about-list" href="/about#mission">Mission</a>
                 </ul>
               </NavDropdown>
 
